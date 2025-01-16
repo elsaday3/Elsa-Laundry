@@ -28,7 +28,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $error = "Password salah.";
         }
     } else {
-        $error = "Email tidak ditemukan.";
+        // $error = "Email tidak ditemukan.";
     }
 
 ?>
@@ -39,82 +39,82 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form Login</title>
     <style>
-        body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: linear-gradient(to top right, #f0f4f8, #d9e4f5);
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+            body {
+                margin: 0;
+                font-family: Arial, sans-serif;
+                background: linear-gradient(to top right, #f0f4f8, #d9e4f5);
+                height: 100vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
 
-.form-container {
-    width: 100%;
-    max-width: 400px;
-    background: #ffffff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-}
+            .form-container {
+                width: 100%;
+                max-width: 400px;
+                background: #ffffff;
+                padding: 20px;
+                border-radius: 8px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                text-align: center;
+            }
 
-form h2 {
-    margin-bottom: 20px;
-    color: #007bff;
-}
+            form h2 {
+                margin-bottom: 20px;
+                color: #007bff;
+            }
 
-form input {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ced4da;
-    border-radius: 4px;
-    box-sizing: border-box;
-}
+            form input {
+                width: 100%;
+                padding: 10px;
+                margin-bottom: 15px;
+                border: 1px solid #ced4da;
+                border-radius: 4px;
+                box-sizing: border-box;
+            }
 
-form button {
-    width: 100%;
-    padding: 10px;
-    font-size: 16px;
-    color: #fff;
-    background: #007bff;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background 0.3s ease;
-}
+            form button {
+                width: 100%;
+                padding: 10px;
+                font-size: 16px;
+                color: #fff;
+                background: #007bff;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+                transition: background 0.3s ease;
+            }
 
-form button:hover {
-    background: #0056b3;
-}
+            form button:hover {
+                background: #0056b3;
+            }
 
-form p {
-    margin-top: 10px;
-    font-size: 14px;
-    color: #495057;
-}
+            form p {
+                margin-top: 10px;
+                font-size: 14px;
+                color: #495057;
+            }
 
-form a {
-    color: #007bff;
-    text-decoration: none;
-}
+            form a {
+                color: #007bff;
+                text-decoration: none;
+            }
 
-form a:hover {
-    text-decoration: underline;
-}
+            form a:hover {
+                text-decoration: underline;
+            }
 
-.error {
-    color: red;
-    font-size: 14px;
-    margin-bottom: 15px;
-}
+            .error {
+                color: red;
+                font-size: 14px;
+                margin-bottom: 15px;
+            }
 
-.success {
-    color: green;
-    font-size: 14px;
-    margin-bottom: 15px;
-}
+            .success {
+                color: green;
+                font-size: 14px;
+                margin-bottom: 15px;
+            }
 
     </style>
 </head>

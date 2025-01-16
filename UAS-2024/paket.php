@@ -63,15 +63,6 @@ $stmt->bind_param("s", $search_param);
 $stmt->execute();
 $result = $stmt->get_result();
 
-// Ambil Data untuk Edit
-$edit_data = null;
-if (isset($_GET['edit_id'])) {
-    $edit_id = $_GET['edit_id'];
-    $stmt_edit = $conn->prepare("SELECT * FROM PAKET WHERE ID_PAKET = ?");
-    $stmt_edit->bind_param("d", $edit_id);
-    $stmt_edit->execute();
-    $edit_data = $stmt_edit->get_result()->fetch_assoc();
-}
 ?>
 
 <!DOCTYPE html>
@@ -225,7 +216,7 @@ form button:hover {
                             <td>Rp. " . number_format($row['harga'], 0, ',', '.') . "</td>
                             <td>
                                 <a href='?edit_id=" . $row['ID_PAKET'] . "' style='color: #1abc9c;'>✏️</a>
-                                <a href='?delete_id=" . $row['ID_PAKET'] . "' style='color: red;' onclick='return confirm(\"Are you sure?\")'>❌</a>
+                                <a href='?delete_id=" . $row['ID_PAKET'] . "' style='color: red;' onclick='return confirm(\"apakah anda yakin?\")'>❌</a>
                             </td>
                         </tr>";
                 }
